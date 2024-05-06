@@ -1,15 +1,15 @@
-interface IPage {
+type Page = {
   title: string;
   likes: number;
   accounts: string[];
   status: string;
   details?: {
-    createAt: Date | string;
-    updateAt: Date | string;
+    createAt: Date;
+    updateAt: Date;
   };
-}
+};
 
-const page1: IPage = {
+const page1: Page = {
   title: "The awesome page",
   likes: 100,
   accounts: ["Max", "Anton", "Nikita"],
@@ -20,7 +20,7 @@ const page1: IPage = {
   },
 };
 
-const page2: IPage = {
+const page2: Page = {
   title: "Python or Js",
   likes: 5,
   accounts: ["Alex"],
