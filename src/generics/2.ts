@@ -8,7 +8,7 @@ type AllType = {
 function compare<T extends AllType, B extends AllType>(
   top: T,
   bottom: B
-): Pick<AllType, "name" | "color" | "position" | "weight"> {
+): AllType {
   return {
     name: top.name,
     color: top.color,
